@@ -6,12 +6,6 @@ public class Junior {
         Scanner tcl = new Scanner(System.in);
         System.out.println("Saldo inicial");
         int saldo = tcl.nextInt();
-            System.out.println("CAIXA ELETRONICO");
-            System.out.println("**Caixa Eletronico**");
-            System.out.println(" 1 - Para Ver Saldo");
-            System.out.println(" 2 - Para Saquar");
-            System.out.println(" 3 - Para Depositar");
-            System.out.println(" 4 - Para Sair");  
         Scanner tec = new Scanner(System.in);
         System.out.println("Qual ação você deseja executar? ");
         int acao = tec.nextInt();
