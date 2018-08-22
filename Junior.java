@@ -25,11 +25,7 @@ public class Junior {
             }else{
                 switch (acao) {
                     case 1: {
-                        System.out.println("**Caixa Eletronico**");
-                        System.out.println(" 1 - Para Ver Saldo");
-                        System.out.println(" 2 - Para Saquar");
-                        System.out.println(" 3 - Para Depositar");
-                        System.out.println(" 4 - Para Sair");
+                        System.out.println("Seu saldo e de "+saldo);
                         break;
                     }
                     case 2: {
@@ -37,13 +33,15 @@ public class Junior {
                         System.out.println("Digite o valor que deseja saquar!");
                         int valor = saq.nextInt();
                         saldo = saldo - valor;
-                        System.out.println(saldo);
+                        System.out.println("Seu saldo e de "+saldo);
                         break;
                     }
                     case 3: {
                         Scanner dep = new Scanner(System.in);
                         System.out.println("Digite o quanto quer depositar!");
                         int deposito = dep.nextInt();
+                        saldo = saldo + deposito;
+                        System.out.println("Seu saldo e de "+saldo);
                         break;
                     }
                     case 4: {
